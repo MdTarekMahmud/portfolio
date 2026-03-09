@@ -12,7 +12,7 @@ export default function GithubStats() {
         <div className="grid md:grid-cols-2 gap-10">
 
           {/* GitHub Stats */}
-          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg">
             <img
               src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=tokyonight`}
               alt="GitHub Stats"
@@ -20,17 +20,17 @@ export default function GithubStats() {
             />
           </div>
 
-          {/* GitHub Streak */}
-          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          {/* GitHub Streak (NEW WORKING URL) */}
+          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg">
             <img
-              src={`https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=tokyonight`}
+              src={`https://streak-stats.demolab.com?user=${username}&theme=tokyonight`}
               alt="GitHub Streak"
               className="w-full"
             />
           </div>
 
           {/* Top Languages */}
-          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg">
             <img
               src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=tokyonight`}
               alt="Top Languages"
@@ -39,7 +39,7 @@ export default function GithubStats() {
           </div>
 
           {/* Contribution Graph */}
-          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-2xl shadow-lg">
             <img
               src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&theme=tokyo-night`}
               alt="Contribution Graph"
