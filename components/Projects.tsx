@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const projects = [
@@ -45,9 +44,8 @@ export default function Projects() {
         <div className="grid md:grid-cols-3 gap-10">
 
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              whileHover={{ y: -10 }}
               className="border border-gray-300 dark:border-gray-700 rounded-xl overflow-hidden hover:shadow-xl transition"
             >
 
@@ -100,7 +98,7 @@ export default function Projects() {
 
               </div>
 
-            </motion.div>
+            </div>
           ))}
 
         </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function GithubStats() {
   const username = "MdTarekMahmud"; // change this
 
@@ -11,14 +13,20 @@ export default function GithubStats() {
 
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
 
-          <img
+          <Image
             src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=tokyonight`}
             alt="GitHub stats"
+            width={495}
+            height={195}
+            unoptimized
           />
 
-          <img
+          <Image
             src={`https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=tokyonight`}
             alt="GitHub streak"
+            width={495}
+            height={195}
+            unoptimized
           />
 
         </div>

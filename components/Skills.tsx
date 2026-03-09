@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaGitAlt, FaPython } from "react-icons/fa";
 import { SiNextdotjs, SiJavascript, SiTailwindcss, SiCplusplus, SiKalilinux } from "react-icons/si";
 
@@ -35,14 +34,13 @@ export default function Skills() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
           {skills.map((skill, index) => (
-            <motion.div
+            <div
               key={index}
-              whileHover={{ scale: 1.1 }}
               className="flex flex-col items-center gap-4 p-6 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-900 transition"
             >
               {skill.icon}
               <p className="font-semibold">{skill.name}</p>
-            </motion.div>
+            </div>
           ))}
 
         </div>
